@@ -4452,12 +4452,12 @@ input[type="button"].btn-block {
 }
 
 .custom-file-input:focus ~ .custom-file-label {
-  border-color: #e3e6f0;
+  border-color: #588bae;
   box-shadow: 0 0 0 0.2rem rgba(33, 200, 122, 0.25);
 }
 
 .custom-file-input[disabled] ~ .custom-file-label {
-  background-color: #f5f8fb;
+  background-color: #588bae;
 }
 
 .custom-file-input:lang(en) ~ .custom-file-label::after {
@@ -4494,9 +4494,9 @@ input[type="button"].btn-block {
   height: calc(1.7em + 1.5rem);
   padding: 0.75rem 1rem;
   line-height: 1.7;
-  color: #8c98a4;
+  color: #fff;
   content: "Browse";
-  background-color: #fff;
+  background-color: #588bae;
   border-left: inherit;
   border-radius: 0 0.25rem 0.25rem 0;
 }
@@ -13069,7 +13069,7 @@ button:focus {
 
 /* Nav Item */
 .u-header__nav-item:hover .u-header__nav-link, .u-header__nav-item:focus .u-header__nav-link {
-  color: #21c87a;
+  color: #0080ff;
 }
 
 /* Nav Link */

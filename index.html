@@ -4,8 +4,6 @@
 <head>
     <!-- Title -->
     <title>Badac Home</title>
-
-
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,17 +16,24 @@
     <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 
     <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/all.min.css">
-    <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
-    <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
-    <link rel="stylesheet" href="../../assets/vendor/custombox/dist/custombox.min.css">
-    <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
-    <link rel="stylesheet" href="../../assets/vendor/dzsparallaxer/dzsparallaxer.css">
-    <link rel="stylesheet" href="../../assets/vendor/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="assets/vendor/custombox/dist/custombox.min.css">
+    <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="assets/vendor/fancybox/jquery.fancybox.css">
 
     <!-- CSS Space Template -->
-    <link rel="stylesheet" href="../../assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
 </head>
+<style>
+    .svg_invert {
+        -webkit-filter: invert(100%);
+        /* safari 6.0 - 9.0 */
+        filter: invert(100%);
+    }
+</style>
 
 <body>
     <!-- Skippy -->
@@ -40,24 +45,26 @@
     <!-- End Skippy -->
 
     <!-- ========== HEADER ========== -->
-    <header id="header"
-        class="u-header u-header--modern u-header--bordered u-header--sticky-top-lg u-header--show-hide-lg u-header--toggle-section-lg"
-        data-header-fix-moment="500" data-header-fix-effect="slide">
-        <div class="u-header__section">
-            <div id="logoAndNav" class="container-fluid">
+    <header id="header" class="u-header u-header--modern u-header--floating-lg">
+        <div id="logoAndNav" class="container">
+            <div class="u-header__section u-header--floating-lg__inner">
                 <!-- Nav -->
                 <nav class="js-mega-menu navbar navbar-expand-lg u-header__navbar">
                     <!-- Logo -->
                     <div class="u-header__navbar-brand-wrapper">
-                        <a class="navbar-brand u-header__navbar-brand" href="index.html" aria-label="Space">
-                            <img class="u-header__navbar-brand-default" src="../../assets/img/logos/badaclogo.png"
-                                height="45" width="120" alt="Logo">
-                            <img class="u-header__navbar-brand-mobile"
-                                src="https://htmlstream.com/preview/space-v1.6.1/assets/svg/logos/logo-short.svg"
-                                alt="Logo">
+                        <a class="navbar-brand u-header__navbar-brand" href="index.html" aria-label="space">
+                            <img class="u-header__navbar-brand-default" width="90" height="35" src="assets/img/logos/badaclogo.png" alt="Logo">
                         </a>
                     </div>
                     <!-- End Logo -->
+                    <!-- Responsive Toggle Button -->
+                    <button type="button" class="navbar-toggler btn u-hamburger u-header__hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                        <span class="d-none d-sm-inline-block">Menu</span>
+                        <span id="hamburgerTrigger" class="u-hamburger__box ml-3">
+                            <span class="u-hamburger__inner"></span>
+                        </span>
+                    </button>
+                    <!-- End Responsive Toggle Button -->
                     <!-- Navigation -->
                     <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse py-0">
                         <ul class="navbar-nav u-header__navbar-nav">
@@ -73,7 +80,7 @@
                             <!-- Home -->
                             <li class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover"
                                 data-animation-in="fadeInUp" data-animation-out="fadeOut">
-                                <a id="homeMegaMenu" class="nav-link u-header__nav-link active" href="about_us.html"
+                                <a id="homeMegaMenu" class="nav-link u-header__nav-link active" href="html/home/about_us.html"
                                     aria-haspopup="true" aria-expanded="false" aria-labelledby="homeSubMenu">
                                     About Us
                                 </a>
@@ -82,7 +89,7 @@
                             <!-- Home -->
                             <li class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover"
                                 data-animation-in="fadeInUp" data-animation-out="fadeOut">
-                                <a id="homeMegaMenu" class="nav-link u-header__nav-link active" href="estimate.html"
+                                <a id="homeMegaMenu" class="nav-link u-header__nav-link active" href="html/home/estimate.html"
                                     aria-haspopup="true" aria-expanded="false" aria-labelledby="homeSubMenu">
                                     Get Estimate
                                 </a>
@@ -91,7 +98,7 @@
                             <!-- Home -->
                             <li class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover"
                                 data-animation-in="fadeInUp" data-animation-out="fadeOut">
-                                <a id="homeMegaMenu" class="nav-link u-header__nav-link active" href="services.html"
+                                <a id="homeMegaMenu" class="nav-link u-header__nav-link active" href="html/home/services.html"
                                     aria-haspopup="true" aria-expanded="false" aria-labelledby="homeSubMenu">
                                     Services
                                 </a>
@@ -100,7 +107,7 @@
                             <!-- Home -->
                             <li class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover"
                                 data-animation-in="fadeInUp" data-animation-out="fadeOut">
-                                <a id="homeMegaMenu" class="nav-link u-header__nav-link active" href="projects.html"
+                                <a id="homeMegaMenu" class="nav-link u-header__nav-link active" href="html/home/projects.html"
                                     aria-haspopup="true" aria-expanded="false" aria-labelledby="homeSubMenu">
                                     Projects
                                 </a>
@@ -116,12 +123,9 @@
                                 </a>
                             </li>
                             <!-- End Button -->
-
-
                         </ul>
                     </div>
                     <!-- End Navigation -->
-
                 </nav>
                 <!-- End Nav -->
             </div>
@@ -155,34 +159,35 @@
 
         <!-- Features Section -->
         <div class="container position-relative z-index-2">
-            <div class="bg-gray-100 shadow-lg rounded mt-n9">
+            <div class="bg-gray-100 shadow-lg rounded mt-n9" style="background-color: transparent;" >
                 <div class="card-deck d-block d-lg-flex card-lg-gutters-1">
-                    <div class="card border-0 mb-2">
+
+                    <div class="card border-0 mb-2" style="background-color: #588BAE;">
                         <!-- Listing -->
                         <div class="card-body p-4">
                             <div class="media">
-                                <img class="max-width-7 mb-2"
+                                <img class="max-width-7 mb-2 svg_invert"
                                     src="https://www.flaticon.com/svg/static/icons/svg/149/149338.svg"
                                     alt="Image Description">
                                 <div class="media-body px-4">
-                                    <h2 class="h6 text-dark mb-1">Estimate</h2>
-                                    <p class="mb-0">This is where we estimate the cost of your desire project.</p>
+                                    <h2 class="h6 mb-1 text-white">Estimate</h2>
+                                    <p class="mb-0 text-white">This is where we estimate the cost of your desire project.</p>
                                 </div>
                             </div>
                         </div>
                         <!-- End Listing -->
                     </div>
 
-                    <div class="card border-0 mb-2">
+                    <div class="card border-0 mb-2" style="background-color: #588BAE;">
                         <!-- Listing -->
                         <div class="card-body p-4">
                             <div class="media">
-                                <img class="max-width-7 mb-2"
+                                <img class="max-width-7 mb-2 svg_invert"
                                     src="https://www.flaticon.com/svg/static/icons/svg/149/149200.svg"
                                     alt="Image Description">
                                 <div class="media-body px-4">
-                                    <h3 class="h6 text-dark mb-1">Plan</h3>
-                                    <p class="mb-0">Now that we've aligned the details, it's time to get things mapped
+                                    <h3 class="h6 text-white mb-1">Plan</h3>
+                                    <p class="mb-0 text-white">Now that we've aligned the details, it's time to get things mapped
                                         out and organized.</p>
                                 </div>
                             </div>
@@ -190,16 +195,16 @@
                         <!-- End Listing -->
                     </div>
 
-                    <div class="card border-0 mb-2">
+                    <div class="card border-0 mb-2" style="background-color: #588BAE;">
                         <!-- Listing -->
                         <div class="card-body p-4">
                             <div class="media">
-                                <img class="max-width-7 mb-2"
+                                <img class="max-width-7 mb-2 svg_invert"
                                     src="https://www.flaticon.com/svg/static/icons/svg/149/149445.svg"
                                     alt="Image Description">
                                 <div class="media-body px-4">
-                                    <h4 class="h6 text-dark mb-1">Build</h4>
-                                    <p class="mb-0">The time has come to bring those ideas and plans to life.</p>
+                                    <h4 class="h6 text-white mb-1">Build</h4>
+                                    <p class="mb-0 text-white">The time has come to bring those ideas and plans to life.</p>
                                 </div>
                             </div>
                         </div>
@@ -282,7 +287,7 @@
                         <div id="selectStepTwo" class="row align-items-center" style="display: none;">
                             <div class="col-md-6 mb-4 mb-md-0">
                                 <img class="img-fluid w-100 rounded"
-                                    src="../../assets/img/demo/real-estate/how-it-works-2.jpg" alt="Image Description">
+                                    src="assets/img/demo/real-estate/how-it-works-2.jpg" alt="Image Description">
                             </div>
 
                             <div class="col-md-6 pl-lg-9">
@@ -302,7 +307,7 @@
                         <div id="selectStepThree" class="row align-items-center" style="display: none;">
                             <div class="col-md-6 mb-4 mb-md-0">
                                 <img class="img-fluid w-100 rounded"
-                                    src="../../assets/img/demo/real-estate/how-it-works-3.jpg" alt="Image Description">
+                                    src="assets/img/demo/real-estate/how-it-works-3.jpg" alt="Image Description">
                             </div>
 
                             <div class="col-md-6 pl-lg-9">
@@ -330,7 +335,7 @@
                 </div>
 
                 <div class="col-sm-4 text-sm-right">
-                    <a class="btn btn-sm btn-primary" style="background-color: #0080FF;" href="projects.html">See more projects</a>
+                    <a class="btn btn-sm btn-primary" style="background-color: #0080FF;" href="html/home/projects.html">See more projects</a>
                 </div>
             </div>
             <!-- End Title -->
@@ -339,7 +344,7 @@
                 <div class="col-md-6 col-lg-4 mb-5">
                     <!-- Property -->
                     <article class="card border-0 shadow-sm h-100 mb-3" style="background-color: #588BAE;">
-                        <a href="#"><img class="card-img-top" style="object-fit: cover; width:100%; height:170px;" src="../../assets/img/demo/real-estate/property-1.jpg"
+                        <a href="#"><img class="card-img-top" style="object-fit: cover; width:100%; height:170px;" src="assets/img/demo/real-estate/property-1.jpg"
                                 alt="Image Description"></a>
                         <div class="card-body pb-0">
                             <h6 class="small text-uppercase font-weight-medium letter-spacing-0_06 text-white mb-1"><i class="svg-icon svg-icon-xs text-white mt-n1 mr-2">
@@ -499,7 +504,6 @@
                         <p>Signin to manage your account.</p>
                     </header>
                     <!-- End Title -->
-
                     <!-- Input -->
                     <div class="js-form-message mb-3">
                         <div class="js-focus-state input-group form">
@@ -530,60 +534,24 @@
                         </div>
                     </div>
                     <!-- End Input -->
-
                     <div class="row mb-3">
-                        <div class="col-6">
-                            <!-- Checkbox -->
-                            <div class="custom-control custom-checkbox d-flex align-items-center text-muted">
-                                <input type="checkbox" class="custom-control-input" id="rememberMeCheckbox">
-                                <label class="custom-control-label" for="rememberMeCheckbox">
-                                    Remember Me
-                                </label>
-                            </div>
-                            <!-- End Checkbox -->
-                        </div>
-
-                        <div class="col-6 text-right">
+                        <!-- <div class="col-6 text-right">
                             <a class="js-animation-link float-right" href="javascript:;" data-target="#forgotPassword"
                                 data-link-group="idForm" data-animation-in="fadeIn">Forgot Password?</a>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="mb-3">
-                        <button type="submit" class="btn btn-block btn-primary">Signin</button>
+                        <button type="submit" class="btn btn-block text-white" style="background-color: #0080FF;">Signin</button>
                     </div>
-
                     <div class="text-center mb-3">
                         <p class="text-muted">
                             Do not have an account?
                             <a class="js-animation-link" href="javascript:;" data-target="#signup"
-                                data-link-group="idForm" data-animation-in="fadeIn">Signup
+                                data-link-group="idForm" data-animation-in="fadeIn" style="color: #0080ff;" >Signup
                             </a>
                         </p>
                     </div>
-
-                    <!-- Divider -->
-                    <div class="text-center u-divider-wrapper my-3">
-                        <span class="u-divider u-divider--xs u-divider--text">OR</span>
-                    </div>
-                    <!-- End Divider -->
-
-                    <!-- Signin Social Buttons -->
-                    <div class="row mx-gutters-2 mb-4">
-                        <div class="col-sm-6 mb-2 mb-sm-0">
-                            <button type="button" class="btn btn-block btn-facebook text-nowrap">
-                                <i class="fab fa-facebook-f mr-2"></i>
-                                Signin with Facebook
-                            </button>
-                        </div>
-                        <div class="col-sm-6">
-                            <button type="button" class="btn btn-block btn-twitter">
-                                <i class="fab fa-twitter mr-2"></i>
-                                Signin with Twitter
-                            </button>
-                        </div>
-                    </div>
-                    <!-- End Signin Social Buttons -->
                 </div>
                 <!-- End Signin -->
 
@@ -734,32 +702,32 @@
     <!-- End Go to Top -->
 
     <!-- JS Global Compulsory -->
-    <script src="../../assets/vendor/jquery/dist/jquery.min.js"></script>
-    <script src="../../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
-    <script src="../../assets/vendor/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../../assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
 
     <!-- JS Implementing Plugins -->
-    <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-    <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
-    <script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="../../assets/vendor/custombox/dist/custombox.min.js"></script>
-    <script src="../../assets/vendor/custombox/dist/custombox.legacy.min.js"></script>
-    <script src="../../assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
-    <script src="../../assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+    <script src="assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/vendor/custombox/dist/custombox.min.js"></script>
+    <script src="assets/vendor/custombox/dist/custombox.legacy.min.js"></script>
+    <script src="assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+    <script src="assets/vendor/fancybox/jquery.fancybox.min.js"></script>
 
     <!-- JS Space -->
-    <script src="../../assets/js/hs.core.js"></script>
-    <script src="../../assets/js/components/hs.header.js"></script>
-    <script src="../../assets/js/components/hs.unfold.js"></script>
-    <script src="../../assets/js/components/hs.validation.js"></script>
-    <script src="../../assets/js/helpers/hs.focus-state.js"></script>
-    <script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
-    <script src="../../assets/js/components/hs.modal-window.js"></script>
-    <script src="../../assets/js/components/hs.show-animation.js"></script>
-    <script src="../../assets/js/components/hs.fancybox.js"></script>
-    <script src="../../assets/js/components/hs.go-to.js"></script>
-    <script src="../../assets/js/components/hs.wizard.js"></script>
+    <script src="assets/js/hs.core.js"></script>
+    <script src="assets/js/components/hs.header.js"></script>
+    <script src="assets/js/components/hs.unfold.js"></script>
+    <script src="assets/js/components/hs.validation.js"></script>
+    <script src="assets/js/helpers/hs.focus-state.js"></script>
+    <script src="assets/js/components/hs.malihu-scrollbar.js"></script>
+    <script src="assets/js/components/hs.modal-window.js"></script>
+    <script src="assets/js/components/hs.show-animation.js"></script>
+    <script src="assets/js/components/hs.fancybox.js"></script>
+    <script src="assets/js/components/hs.go-to.js"></script>
+    <script src="assets/js/components/hs.wizard.js"></script>
 
 
     <!-- JS Plugins Init. -->
